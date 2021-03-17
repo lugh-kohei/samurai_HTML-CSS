@@ -1,0 +1,32 @@
+<html lang="ja">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--       デバイスのサイズに合わせるという表記-->
+    <!--initial-scale=1で、そのデバイスの初期表示のサイズを指定でき,1を指定した場合はそのデバイスに合ったサイズで表示-->
+        <style>
+            .media {
+                background-color: blue;
+            }
+            
+            
+            @media screen and (min-width:480px) {
+                .media {
+                    background-color: red;
+                }
+            }
+             /*画面サイズ幅が480px以上である場合にbackground-color: red;が有効になります。*/
+
+            @media screen and (min-width:640px) {
+                .media {
+                    background-color: green;
+                }
+            }
+            /*画面サイズ幅が640px以上である場合にbackground-color: green;が有効になります。*/
+        </style>
+    </head>
+    <body>
+        <div class="media">
+            <h1>メディアクエリ</h1>
+        </div>
+    </body>
+</html>
